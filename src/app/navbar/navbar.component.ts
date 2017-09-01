@@ -12,4 +12,10 @@ export class NavbarComponent implements OnInit {
   ngOnInit() {
   }
 
+  onClick(){
+    console.log("innnn");
+    
+    document.getElementById("sidebar").classList.toggle("active");
+  }
+
 }
