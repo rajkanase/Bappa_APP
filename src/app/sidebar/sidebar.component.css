@@ -1,0 +1,9 @@
+.sidebar{
+    position: fixed;
+    width: 225px;
+    height: 100%;
+    overflow-y: auto;
+    background-color: whitesmoke;
+    color: black;
+    margin-top: -20px;
+}

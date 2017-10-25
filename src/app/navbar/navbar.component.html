@@ -1,0 +1,70 @@
+    <!-- Second navbar for sign in -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+         
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-2">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Bappa</a>
+          </div>
+      
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="navbar-collapse-2">
+                  <a style="margin-top:7px;border-color:black" class="btn btn-default btn-outline btn-circle collapsed pull-right"  data-toggle="collapse" href="#nav-collapse2" (click)="onButton()" aria-expanded="false" aria-controls="nav-collapse2">Sign in</a>
+                  <a style="margin-top:7px;border-color:black" class="btn btn-default btn-outline btn-circle collapsed pull-right"  data-toggle="collapse" href="#nav-collapse2" (click)="onSearch()" aria-expanded="false" aria-controls="nav-collapse2">Search</a>
+              
+                  <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Works</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Contact</a></li>
+              <li>
+               
+              </li>
+            </ul>
+            
+            
+            
+            <div [class]="isTrue" id="nav-collapse2">
+              <form class="navbar-form navbar-right form-inline" role="form">
+                <div class="form-group">
+                  <label class="sr-only" for="Email">Email</label>
+                  <input type="email" class="form-control" id="Email" placeholder="Email" autofocus required />
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="Password">Password</label>
+                  <input type="password" class="form-control" id="Password" placeholder="Password" required />
+                </div>
+                <button type="submit" class="btn btn-success">Sign in</button>
+                <button type="submit" class="btn btn-primary">Sign Up</button>
+              </form>
+            </div>
+  
+  
+  
+            <div [class]="isSearch" id="nav-collapse3">
+                  <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Search" />
+                    </div>
+                    <button type="submit" class="btn btn-danger"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                  </form>
+                </div>
+              
+  
+  
+  
+  
+  
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container -->
+      </nav><!-- /.navbar -->
+      
+    
